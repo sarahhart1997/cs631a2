@@ -13,7 +13,7 @@ CREATE TABLE Customer (
 CREATE TABLE Order (
     OID INTEGER, 
     CID INTEGER, 
-    DATE TEXT, 
+    OrderDate TEXT, 
 ), 
 
 CREATE TABLE Product (

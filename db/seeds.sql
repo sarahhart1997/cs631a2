@@ -1,4 +1,3 @@
--- Not sure where to get tables from so I made my own
 INSERT INTO Customer (CID, Name, City, State)
 VALUES
     ('1234', 'Alex', 'Newark', 'New Jersey'),
