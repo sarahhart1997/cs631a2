@@ -19,5 +19,5 @@ const db = mysql.createConnection(
         password: 'hskid1',
         database: 'sales'
     },
-    console.log('Connected to the election database.')
+    console.log('Connected to the sales database.')
 );

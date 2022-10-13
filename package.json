@@ -1,0 +1,20 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "Sql assignment for CS631",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahhart1997/cs631a2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahhart1997/cs631a2/issues"
+  },
+  "homepage": "https://github.com/sarahhart1997/cs631a2#readme"
+}
