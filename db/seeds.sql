@@ -1,11 +1,11 @@
-INSERT INTO customer (cid, customer_name, city, state)
+INSERT INTO customer (cid, name, city, state)
 VALUES
     ('1234', 'Alex', 'Newark', 'New Jersey'),
     ('2345', 'Tom', 'Miami', 'Florida'),
     ('3456', 'Alice', 'Atlanta', 'Georgia'), 
     ('4567', 'Rebecca', 'Newark', 'New Jersey');
 
-INSERT INTO order (oid, cid, date)
+INSERT INTO purchases (oid, cid, date)
 VALUES 
     ('7891', '1234', '1-1-2022'), 
     ('8888', '2345', '2-2-2022'),
