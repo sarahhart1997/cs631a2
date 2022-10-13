@@ -5,16 +5,16 @@ DROP TABLE IF EXISTS LineItem;
 
 CREATE TABLE Customer (
     CID INTEGER, 
-    Name VARCHAR(50), 
+    CustomerName VARCHAR(50), 
     City TEXT, 
-    State VARCHAR(60), 
+    LocationState VARCHAR(60), 
 );
 
 CREATE TABLE Order (
-    OID INTEGER, 
+    OrderID INTEGER, 
     CID INTEGER, 
     OrderDate TEXT, 
-), 
+);
 
 CREATE TABLE Product (
     PID INTEGER, 
@@ -24,8 +24,8 @@ CREATE TABLE Product (
 
 CREATE TABLE LineItem (
     LID INTEGER, 
-    OID INTEGER, 
+    OrderID INTEGER, 
     PID INTEGER, 
-    Number INTEGER, 
-    TotalPrice INTEGER
+    Quantity INTEGER, 
+    TotalPrice INTEGER,
 );
