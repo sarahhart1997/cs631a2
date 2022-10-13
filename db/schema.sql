@@ -1,31 +1,31 @@
-DROP TABLE IF EXISTS Customer;
-DROP TABLE IF EXISTS Order;
-DROP TABLE IF EXISTS Product;
-DROP TABLE IF EXISTS LineItem;
+DROP TABLE IF EXISTS customer;
+DROP TABLE IF EXISTS order;
+DROP TABLE IF EXISTS product;
+DROP TABLE IF EXISTS line_item;
 
-CREATE TABLE Customer (
-    CID INTEGER, 
-    CustomerName VARCHAR(50), 
-    City TEXT, 
-    LocationState VARCHAR(60), 
+CREATE TABLE customer (
+    cid INTEGER, 
+    name VARCHAR(50), 
+    city TEXT, 
+    state VARCHAR(60) 
 );
 
-CREATE TABLE Order (
-    OrderID INTEGER, 
-    CID INTEGER, 
-    OrderDate TEXT, 
+CREATE TABLE order (
+    oid INTEGER, 
+    cid INTEGER, 
+    date TEXT
 );
 
-CREATE TABLE Product (
-    PID INTEGER, 
-    ProductName VARCHAR (75), 
-    Price INTEGER, 
+CREATE TABLE product (
+    pid INTEGER, 
+    product_name VARCHAR (75), 
+    price INTEGER 
 );
 
-CREATE TABLE LineItem (
-    LID INTEGER, 
-    OrderID INTEGER, 
-    PID INTEGER, 
-    Quantity INTEGER, 
-    TotalPrice INTEGER,
+CREATE TABLE line_item (
+    lid INTEGER, 
+    oid INTEGER, 
+    pid INTEGER, 
+    number INTEGER, 
+    total_price INTEGER
 );
