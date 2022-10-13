@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/sarahhart1997/cs631a2/issues"
   },
-  "homepage": "https://github.com/sarahhart1997/cs631a2#readme"
+  "homepage": "https://github.com/sarahhart1997/cs631a2#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "inquirer": "^8.2.2",
+    "mysql2": "^2.3.3"
+  },
+  "keywords": []
 }
