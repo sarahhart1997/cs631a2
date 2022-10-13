@@ -1,23 +1,42 @@
 const mysql = require('mysql2');
-const express = require('express');
+const express = require('express')
 const inputCheck = require('./utils/inputCheck');
+const { endianness } = require('os');
+const inquirer = require('inquirer');
+const { connect } = require('http2');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-// Express middleware
+//Express middleware
 app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 
 // Connect to database
 const db = mysql.createConnection(
     {
-        host: 'localhost', 
-        // Your MySQL username,
-        user: 'root', 
-        //Your MySQL password
+        host: 'localhost',
+        user: 'root',
         password: 'hskid1',
-        database: 'sales'
+        database: 'employee_tracker'
     },
-    console.log('Connected to the sales database.')
+    console.log('Connected to the election database.')
 );
+
+
+// Test message to make sure the server is running
+app.get('/', (req, res) => {
+    res.json({
+        message: 'Hello World'
+    });
+});
+
+// Default response for any other request (Not Found)
+app.use((req, res) => {
+    res.status(404).end();
+});
+
+// Server actively listening here
+app.listen(PORT, () => {
+    console.log(`server running on port ${PORT}`);
+});
