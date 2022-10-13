@@ -5,7 +5,7 @@ VALUES
     ('3456', 'Alice', 'Atlanta', 'Georgia'), 
     ('4567', 'Rebecca', 'Newark', 'New Jersey');
 
-INSERT INTO purchases (oid, cid, date)
+INSERT INTO order_table (oid, cid, order_date)
 VALUES 
     ('7891', '1234', '1-1-2022'), 
     ('8888', '2345', '2-2-2022'),

@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS customer;
-DROP TABLE IF EXISTS purchases;
+DROP TABLE IF EXISTS order_table;
 DROP TABLE IF EXISTS product;
 DROP TABLE IF EXISTS line_item;
 
@@ -10,8 +10,8 @@ CREATE TABLE customer (
     state VARCHAR(60) 
 );
 
-CREATE TABLE purchases (
-    order_id INTEGER, 
+CREATE TABLE order_table (
+    oid INTEGER, 
     cid INTEGER, 
     order_date TEXT
 );
